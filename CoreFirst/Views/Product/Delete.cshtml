@@ -1,0 +1,12 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<form method="post">
+    <p>Are you sure want to delete this product? : @Model.Name</p>
+    <input type="submit" value="Yes" class="btn badge-danger" />
+    <a href="/Product">Cancel</a>
+</form>
